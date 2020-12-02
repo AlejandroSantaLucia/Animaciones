@@ -1,0 +1,43 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.container {
+    border: 1px solid black;
+}
+
+
+.cuadrado{
+    width: 200px;
+    height: 200px;
+    background: rgb(121, 153, 6);
+    margin: 20px;
+    transition: .3s;
+    text-align: center;
+}
+
+.container:hover .cuadrado.a{
+    transform: skew(45deg);
+}
+.container:hover .cuadrado.b{
+    transform: skew(45deg, 45deg);
+}
+.container:hover .cuadrado.c{
+    transform: skew(45deg, 25deg);
+}
+.container:hover .cuadrado.d{
+    transform: skew(90deg);
+}
+.container:hover .cuadrado.e{
+    transform: skew(180deg);
+}
+.container:hover .cuadrado.f{
+    transform: skew(-45deg);
+}

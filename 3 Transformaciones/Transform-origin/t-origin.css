@@ -1,0 +1,95 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.container {
+    border: 1px solid black;
+}
+
+
+.cuadrado{
+    width: 200px;
+    height: 200px;
+    background: rgb(118, 4, 141);
+    margin: 20px;
+    transition: .3s;
+    text-align: center;
+}
+
+.cuadrado.a {
+    transform-origin: top;
+}
+.container:hover .cuadrado.a{
+    transform: rotateX(45deg);
+}
+
+
+
+.cuadrado.b {
+    transform-origin: bottom;
+}
+.container:hover .cuadrado.b{
+    transform: rotateX(45deg);
+}
+
+
+
+.cuadrado.c {
+    transform-origin: left;
+}
+.container:hover .cuadrado.c{
+    transform: rotateY(45deg);
+}
+
+
+
+.cuadrado.d {
+    transform-origin: right;
+}
+.container:hover .cuadrado.d{
+    transform: rotateY(45deg);
+}
+
+
+.cuadrado.e {
+    transform-origin: top right;
+}
+.container:hover .cuadrado.e{
+    transform: rotateZ(45deg);
+}
+
+
+.cuadrado.f {
+    transform-origin: bottom left;
+}
+.container:hover .cuadrado.f{
+    transform: rotateZ(45deg);
+}
+
+.cuadrado.g {
+    transform-origin: top right;
+}
+.container:hover .cuadrado.g{
+    transform: rotateZ(90deg);
+}
+
+.cuadrado.h {
+    transform-origin: bottom left;
+}
+.container:hover .cuadrado.h{
+    transform: rotateZ(90deg);
+}
+
+.cuadrado.i {
+    transform-origin: 30% 30%;
+}
+.container:hover .cuadrado.i{
+    transform: rotateZ(90deg);
+}

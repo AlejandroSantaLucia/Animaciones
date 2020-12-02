@@ -1,0 +1,18 @@
+.pelota1{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: red;
+    transition-property: width, height; /*que propiedad quiero modificar en la transicion */
+    transition-duration: 1s ;  /*cuanto va a durar la transicion.*/
+    transition-delay:  1s;  /*tiempo de espera hasta que se active la transicion*/
+    transition-timing-function: ease; /*propiedad de aceleracion de la transicion */
+
+    /* transition: width, height 1s 1s ease; */
+}
+
+
+.pelota1:hover{
+    width: 200px;
+    height: 200px;
+}

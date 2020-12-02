@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="translate.css">
+    <title>translate</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="cuadrado a">     
+            transform: translate(100px, -100px) 
+        </div>
+        
+    </div>
+    <div class="container">
+
+        <div class="cuadrado b"> 
+            transform: translate(-100px, 100px) 
+        </div>
+        
+    </div>
+    <div class="container">
+
+        <div class="cuadrado c"> 
+            transform: translateY(-100px)
+        </div>
+        
+    </div>
+    <div class="container">
+
+        <div class="cuadrado d"> 
+            transform: translateZ(100px)   
+            //// + perspective: 200px en body  
+            /// + perspective-origin: top right;
+        </div>
+        
+    </div>
+    <div class="container">
+
+        <div class="cuadrado e"> 
+            transform: translate3d(100px,50px,-50px)
+        </div>
+        
+    </div>
+    
+</body>
+</html>
