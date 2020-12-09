@@ -1,0 +1,66 @@
+body{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100vh;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.container {
+    border: 1px solid black;
+    width: 100%;
+}
+
+
+.cuadrado{
+    width: 100px;
+    height: 100px;
+    background: rgb(1, 33, 41);
+    margin: 20px;
+    transition: .3s;
+    text-align: center;
+    color: white;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cuadrado.a{
+    animation-name: movimiento, escalera;
+    animation-duration: 3s, .3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear, ease-in-out;
+}
+
+
+@keyframes movimiento{
+    0% {
+        left: 0%;
+    }
+    100%{
+        left: calc(100% - 140px);
+    }
+}
+
+/* @keyframes rebote{
+    0%{
+        transform:translateY(0) ;
+    }
+    100% {
+        transform: translateY(100%) scale(1.2, .8);
+    }
+} */
+@keyframes escalera{
+    0%{
+        transform:translateY(0) ;
+    }
+    100% {
+        transform: translateY(500%);
+    }
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="animaciones.css">
+    <title>animaciones</title>
+</head>
+<body>
+    <div class="container ">
+        a
+        <div class="cuadrado a">
+            fadeOut // <br>
+            animation-name: fadeOut;
+            animation-duration: 2s; // <br>
+            @keyframes fadeOut{
+                0%{
+                    opacity: 1;
+                }
+                100% {
+                    opacity: 0
+                }
+        </div>
+    </div>
+    <div class="container ">
+        b
+        <div class="cuadrado b">
+            fadeOutDelay // <br>
+            animation-name: fadeOutDelay;
+            animation-duration: 1s;
+            animation-delay: 2s; // <br>
+            @keyframes fadeOutDelay{
+            0%{
+                opacity: 1;
+            }
+            100% {
+                opacity: 0
+            }
+        </div>
+    </div>
+    <div class="container ">
+        c
+        <div class="cuadrado c">
+            fadeOutIteration // <br>
+            animation-name: fadeOutIteration;
+            animation-duration: 1s;
+            animation-iteration-count: 3; // <br>
+            @keyframes fadeOutIteration{
+                0%{
+                    opacity: 1;
+                }
+                100% {
+                    opacity: 0
+                }
+
+        </div>
+    </div>
+    <div class="container ">
+        d
+        <div class="cuadrado d">
+            fadeOutReverse // <br>
+            animation-name: fadeOutReverse;
+            animation-duration: 1s;
+            animation-direction: reverse; // <br>        
+        @keyframes fadeOutReverse{
+            0%{
+                opacity: 1;
+            }
+            100% {
+                opacity: 0
+            }
+        </div>
+    </div>
+    <div class="container ">
+        e
+        <div class="cuadrado e">
+            fadeOutInfiniteAlternate // <br>
+            animation-name: fadeOutInfiniteAlternate;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate; // <br>
+            @keyframes fadeOutInfiniteAlternate{
+                0%{
+                    opacity: 1;
+                }
+                100% {
+                    opacity: 0
+                }
+
+        </div>
+    </div>
+    <div class="container ">
+        f
+        <div class="cuadrado f">
+            fadeOutFillForward // <br>
+            animation-name: fadeOutFillForward;
+            animation-duration: 1s;
+            animation-fill-mode: forwards; // <br>
+            @keyframes fadeOutFillForward{
+                0%{
+                    opacity: 1;
+                }
+                100% {
+                    opacity: 0
+                }
+        </div>
+    </div>
+    <div class="container ">
+        g
+        <div class="cuadrado g">
+            fadeOutPauseHover // <br>
+            animation-name: fadeOutPauseHover;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate; // <br>
+            .container:hover .cuadrado.g{
+                animation-play-state: paused;
+            }
+
+        </div>
+    </div>
+    <div class="container h">
+        h
+        <div class="cuadrado h">
+            Mueva
+        </div>
+    </div>
+    <div class="container ">
+        <div class="cuadrado a">
+        </div>
+    </div>
+    
+</body>
+</html>
