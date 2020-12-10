@@ -1,0 +1,28 @@
+body{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+
+}
+
+.container {
+    border: 1px solid hsl(0, 100%, 50%);
+    width: 100%;
+}
+
+.pelota {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+
+.carga {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
