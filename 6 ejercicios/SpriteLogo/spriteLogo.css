@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+
+
+.logo{
+    width: 100px;
+    height: 100px;
+    background-image: url("pruebasprite4.png");
+    cursor: pointer;
+    
+}
+
+/* .logo.pulse {
+    
+    animation-name: pulse ;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+} */
+
+.logo.is-click {
+    animation-name: click;
+    animation-duration: 2s;
+    animation-timing-function: steps(39);
+    animation-fill-mode: forwards;
+}
+@keyframes click {
+    0%{
+
+      background-position: 0 0;
+    }
+    100%{
+
+        background-position: right;
+    }
+}
+
+
+/* @keyframes pulse {
+    0% , 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+} */
