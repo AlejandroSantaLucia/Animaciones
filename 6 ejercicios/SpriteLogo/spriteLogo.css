@@ -7,6 +7,15 @@ body {
     height: 100vh;
 }
 
+.text {
+    font-size: 2rem;
+    color: white;
+}
+
+
+
+
+
 
 
 
@@ -15,6 +24,7 @@ body {
     height: 100px;
     background-image: url("pruebasprite4.png");
     cursor: pointer;
+    
     
 }
 
