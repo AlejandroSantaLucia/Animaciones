@@ -2,7 +2,7 @@ body {
     margin: 0;
 }
 
-.container  {
+.containerWaves  {
     position: relative;
     height: 500px;
     background: #0f9bf6;
@@ -11,7 +11,7 @@ body {
     justify-content: center;
 }
 
-.content {
+.contentWaves {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     font-size: 2em;

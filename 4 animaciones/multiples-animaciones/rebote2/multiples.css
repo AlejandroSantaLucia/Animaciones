@@ -1,0 +1,58 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100vh;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.animacionBolaContainer {
+    border: 1px solid black;
+    width: 100%;
+}
+
+
+.animacionBola{
+    width: 50px;
+    height: 50px;
+    background: rgb(1, 33, 41);
+    margin: 20px;
+    transition: .3s;
+    text-align: center;
+    color: white;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    animation-name: movimiento, rebote;
+    animation-duration: 3s, .3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear, ease-in-out;
+    }
+  
+
+
+@keyframes movimiento{
+    0% {
+        left: 0%;
+    }
+    100%{
+        left: calc(100% - 140px);
+    }
+}
+
+@keyframes rebote{
+    0%{
+        transform:translateY(-80%) ;
+    }
+    100% {
+        transform: translateY(100%) scale(1.2, .8);
+    }
+}

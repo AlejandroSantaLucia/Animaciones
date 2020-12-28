@@ -19,13 +19,11 @@ body {
 
 
 
-.logo{
+.animacionLogo{
     width: 200px;
     height: 200px;
     background-image: url("logoGrande.png");
     cursor: pointer;
-    
-    
 }
 
 /* .logo.pulse {
@@ -37,7 +35,7 @@ body {
     animation-direction: alternate;
 } */
 
-.logo.is-click {
+.animacionLogo.is-click {
     animation-name: click;
     animation-duration: 2s;
     animation-timing-function: steps(39);

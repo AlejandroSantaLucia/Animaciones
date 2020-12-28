@@ -1,8 +1,8 @@
-const $logo = document.getElementById (`logo`)
+const $animacionLogo = document.getElementById (`animacionLogo`)
 
-$logo.addEventListener (`click`, (event) =>{
+$animacionLogo.addEventListener (`click`, (event) =>{
     // console.log(event)
-       $logo.classList.toggle(`is-click`);
+       $animacionLogo.classList.toggle(`is-click`);
 
 })
 
