@@ -223,6 +223,9 @@ justify-content: center;
 .payaso__cejasContainer{
     display: flex;
     justify-content: center;
+
+    position: relative;
+    z-index: 6;
 }
 
 .payaso__cejaIzquierda, .payaso__cejaDerecha{
@@ -252,3 +255,194 @@ justify-content: center;
 
 }
 
+
+
+
+
+--------------
+
+
+
+
+
+
+.payaso:hover .payaso__nariz{
+    /* background-color: blue; */
+    animation-name: ColorNariz;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes ColorNariz {
+    0% {
+        background-color: blue;
+    }
+    20% {
+        background-color: green;
+    }
+    40% {
+        background-color: yellow;
+    }
+    60% {
+        background-color: violet;
+    }
+    80% {
+        background-color: red;
+    }
+}
+
+
+.payaso:hover .payaso__menton{
+    animation-name: tamanoMenton;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes tamanoMenton{
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2, 1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.payaso:hover .payaso__mentonBoca {
+    animation-name: MuecaBoca;
+    animation-duration: .2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes MuecaBoca {
+
+    0% {width: 170px;
+        height: 50px;
+        
+
+    }
+    20%{
+        right: 60px;
+
+    }
+    40%{
+        right: 70px;
+    }
+    60%{
+        right: 80px;
+    }
+    80%{
+        right: 90px;
+    }
+
+    100% {
+        width: 50px;
+        height: 40px;
+        background-color: black;
+        right: 100px;
+
+}}
+
+
+.payaso:hover .payaso__cabeza, .payaso__orejaIzquierda, .payaso__orejaDerecha{
+
+    animation-name: CambiaCabeza;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes CambiaCabeza {
+    0%{
+
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100%{
+        background-color: rgb(233, 172, 153);
+        transform: scale(1.1);
+    }
+}
+
+
+.payaso:hover .payaso__cejaIzquierda{
+    animation-name: cejaIzquierda;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes cejaIzquierda {
+    0%{
+
+    }
+    100% {
+        transform: scale(1.6) translateY(15px) translateX(-5px);
+    }
+}
+
+.payaso:hover .payaso__cejaDerecha{
+    animation-name: cejaDerecha;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes cejaDerecha {
+    0%{
+
+    }
+    100% {
+        transform: scale(1.6, 1.6) translateY(26px) translateX(5px) rotateZ(-26deg);
+    }
+}
+
+
+.payaso:hover .payaso__ojosContainer{
+    animation-name: TamanoOjos;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes TamanoOjos{
+    0%{
+
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+
+.payaso:hover .payaso__ojos--pupilaIzquierda, .payaso__ojos--pupilaDerecha{
+
+    animation-name: PosicionPupila;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes PosicionPupila{
+    0%{
+
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+}
+
+
+.payaso:hover .payaso__mono{
+    animation-name: GiroMono;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes GiroMono{
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
